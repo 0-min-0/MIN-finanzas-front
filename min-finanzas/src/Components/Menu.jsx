@@ -6,9 +6,9 @@ export const Menu = () => {
         <div>
             <ul className='flex items-center gap-3'>
                 <OpcionMenu Nombre='Principal' Ruta='/ruta1' />
-                <OpcionMenu Nombre='Información' Ruta='/ruta2' />
                 <OpcionMenu Nombre='Sobre la creadora' Ruta='/ruta3' />
                 <OpcionMenu Nombre='Contacto' Ruta='/ruta4' />
+                <OpcionMenu Nombre='Asistente IA' Ruta='/ruta5' />
             </ul>
         </div>
     )

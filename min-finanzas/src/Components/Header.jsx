@@ -12,8 +12,16 @@ export const Header = () => {
         <Menu />
       </div>
       <div className='flex gap-2'>
-        <Botones Nombre='Iniciar sesión' Ruta='/iniciar-sesion' Clase='text-white py-1.5' />
-        <Botones Nombre='Registrarse' Ruta='/registrarse' Clase='bg-white text-[#7a71dd] border-2 border-[#7a71dd] hover:bg-[#7a71dd] hover:text-white' />
+        <Botones
+          Nombre='Iniciar sesión'
+          Ruta='/iniciar-sesion'
+          Clase='text-white py-1.5'
+        />
+        <Botones
+          Nombre='Registrarse'
+          Ruta='/registrarse'
+          Clase='bg-white text-[#7a71dd] border-2 border-[#7a71dd] hover:bg-[#7a71dd] hover:text-white'
+        />
       </div>
     </header>
   )

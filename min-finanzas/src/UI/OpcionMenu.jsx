@@ -8,7 +8,7 @@ export const OpcionMenu = ({ Nombre, Ruta }) => {
             <NavLink
                 to={Ruta}
                 className={({ isActive }) =>
-                    `flex items-center gap-2 font-[nunito-sans] font-semibold px-4 py-1.5 rounded-xl
+                    `flex items-center gap-2 font-[nunito-sans] font-semibold px-2.5 py-1.5 rounded-xl
                     transition-all duration-300 ease-in-out
                     ${isActive ? 'text-[#7a71dd]' : 'text-gray-700 hover:text-[#7a71dd]'}`
                 }
