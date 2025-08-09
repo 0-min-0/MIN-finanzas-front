@@ -1,4 +1,25 @@
-@import 'tailwindcss';
+@import "tailwindcss" layer(base);  /* Síntaxis correcta para v4 */
 
-@import "tailwindcss/preflight";  
-@tailwind utilities;
+@layer utilities {
+
+}
+
+@font-face {
+    font-family: 'Nunito-sans';
+    src: url('../assets/fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-bold';
+    src: url('../assets/fonts/Nunito-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red-sans';
+    src: url('../assets/fonts/RedHatDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Red-bold';
+    src: url('../assets/fonts/RedHatDisplay-ExtraBold.ttf') format('truetype');
+}

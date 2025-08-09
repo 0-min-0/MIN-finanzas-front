@@ -13,6 +13,12 @@ export default {
         'xl': '1280px',
         '2xl': '1536px',
       },
+      fontFamily: {
+        'nunito-sans': ['Nunito-sans', 'sans-serif'],
+        'nunito-bold': ['Nunito-bold', 'sans-serif'],
+        'red-sans': ['Red-sans', 'sans-serif'],
+        'red-bold': ['Red-bold', 'sans-serif'],
+      },
     },
   },
   plugins: [],
