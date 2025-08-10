@@ -1,11 +1,18 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import imagenPrincipal from '../assets/images/imagen-principal.png'
 import { Botones } from '../UI/Botones'
 
 export const ContenidoPrincipal = () => {
     return (
         <div className='flex justify-between items-center'>
-            <div className='pl-22'>
+            {/* Texto con animación */}
+            <motion.div
+                className='pl-22'
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
                 <h1 className='text-xl mb-2 font-[nunito-sans] text-[#7a71dd] font-semibold'>
                     ¡Bienvenido a MIN!
                 </h1>
@@ -26,15 +33,23 @@ export const ContenidoPrincipal = () => {
                     Ruta='/descargar-app'
                     Clase='bg-[#7a71dd] text-white py-1.5 px-4 rounded'
                 />
-                <p className='font-[nunito-sans] mt-2 text-xs text-[#7a71dd]'>Disponible solo para dispositivos Android.</p>
-            </div>
-            <div>
+                <p className='font-[nunito-sans] mt-2 text-xs text-[#7a71dd]'>
+                    Disponible solo para dispositivos Android.
+                </p>
+            </motion.div>
+
+            {/* Imagen con animación */}
+            <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+            >
                 <img
                     src={imagenPrincipal}
                     alt='Imagen Principal'
                     className='w-170 h-auto'
                 />
-            </div>
+            </motion.div>
         </div>
     )
 }

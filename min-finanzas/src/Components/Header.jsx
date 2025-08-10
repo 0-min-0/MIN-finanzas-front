@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header className='flex justify-between items-center px-8 py-4'>
       <h1 className='text-lg font-[nunito-sans] font-semibold mb-1'>
-        <span className='text-xl font-[nunito-bold] text-[#605ad1]'>MIN</span> Gestión de finanzas personales
+        <span className='text-xl font-[nunito-bold] text-[#605ad1] mr-2'>MIN</span> Gestión de finanzas personales
       </h1>
       <div className=''>
         <Menu />
