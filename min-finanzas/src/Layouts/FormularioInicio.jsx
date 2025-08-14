@@ -1,5 +1,8 @@
 import React from 'react'
 import inicioSesion from '../assets/images/iniciar-sesion.png'
+import { Input } from '../UI/Input'
+import { Botones } from '../UI/Botones'
+import { NavLink } from 'react-router-dom'
 
 export const FormularioInicio = () => {
     return (
@@ -11,18 +14,46 @@ export const FormularioInicio = () => {
                     className='w-190 h-auto'
                 />
             </div>
-            <div className='bg-[#fbfafe] rounded-xl p-8'>
-                <h2>Iniciar Sesión</h2>
-                <form action=''>
-                    <div>
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
+            <div className='w-[32%] shadow-[#9689e865] shadow-md rounded-xl py-6 px-10 mr-25'>
+                <h2 className='text-center mb-3 text-lg font-[nunito-bold] text-[#6961c2]'>Iniciar Sesión</h2>
+                <form action='' className='w-full flex flex-col items-center gap-1.5'>
+                    <Input
+                        Label='Correo electrónico o número de teléfono'
+                        Tipo={'email' || 'tel'}
+                        Id='loginEmail'
+                        Nombre='email'
+                        Placeholder='Ingresa tu email'
+                        Estilo=''
+                    />
+                    <Input
+                        Label='Contraseña'
+                        Tipo='password'
+                        Id='contraseña'
+                        Nombre='contraseña'
+                        Placeholder='Ingresa tu contraseña'
+                        Estilo=''
+                    />
+                    <span className='mt-2 text-sm text-[#6961c2]'>
+                        ¿Has olvidado tu contraseña?
+                        <NavLink to='/recuperar-contraseña' className='mt-2 ml-1 text-sm text-[#6961c2] hover:underline'>
+                            Recupérala aquí
+                        </NavLink>
+                    </span>
+                    <div className='flex gap-2 mt-4'>
+                        <Botones
+                            Nombre='Iniciar Sesión'
+                            Ruta='/dashboard'
+                            Clase='py-1.5 text-white'
+                            Tipo='submit'
+                        />
+                        <Botones
+                            Nombre='Necesito ayuda'
+                            Ruta='/dashboard'
+                            Clase='bg-white text-[#7a71dd] border-2 border-[#7a71dd]'
+                            Hover='hover:bg-[#7a71dd] hover:text-white'
+                            Tipo='submit'
+                        />
                     </div>
-                    <div>
-                        <label htmlFor="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required />
-                    </div>
-                    <button type="submit">Iniciar Sesión</button>
                 </form>
             </div>
         </div>

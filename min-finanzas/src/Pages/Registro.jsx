@@ -11,7 +11,8 @@ export const Registro = () => {
                     <Botones
                         Nombre='Iniciar sesión'
                         Ruta='/iniciar-sesion'
-                        Clase='bg-white text-[#7a71dd] border-2 border-[#7a71dd] hover:bg-[#7a71dd] hover:text-white'
+                        Clase='bg-white text-[#7a71dd] border-2 border-[#7a71dd]'
+                        Hover='hover:bg-[#7a71dd] hover:text-white'
                     />
                 }
             />
